@@ -1,7 +1,8 @@
-Title: Pengeluaran Buah Sebulan
-Date: 2021-12-26 10:20
-Category: Perilaku Konsumen
+Title: Minat Belanja Buah Bulanan Warga Masih Merosot 0.57% Hingga Pasca Pandemi
+Date: 2022-06-15 11:20
+Category: Jawa Tengah
 Slug: pengeluaran-buah-sebulan
+Tags: consumer behavoiur,spending,fruits
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -36,15 +37,14 @@ const myChart = new Chart(ctx, {
 						2.3,
 						],
             backgroundColor: [
-                'grey',
-                'rgba(54, 162, 235, 1)',
-                'grey',
-                'grey',
-                'grey',
-                'grey',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
             ],
+            borderColor: 'rgba(237, 144, 57, 1)',
             datalabels: {
-	        	color: 'blue',
+	        	color: 'rgba(237, 144, 57, 1)',
 	        	align: 'end',
     			anchor: 'end',
     			color: function(context) {
