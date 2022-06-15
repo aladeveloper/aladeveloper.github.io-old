@@ -329,8 +329,9 @@ const myChart = new Chart(ctx, {
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
             ],
+            borderColor: 'rgba(54, 162, 235, 1)',
             datalabels: {
-                color: 'blue',
+                color: 'rgba(54, 162, 235, 1)',
                 align: 'end',
                 anchor: 'end',
                 color: function(context) {
