@@ -277,21 +277,25 @@ const myChart = new Chart(ctx, {
 
                         "2021",
                         ],
-        datasets: [{
+        datasets: [ 
+        {
             label: '',
             data: [
                         3.55,
 
                         3.32,
-
-                        3.72,
-
-                        4.51,
                         ],
             backgroundColor: [
+                'grey',
                 'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1 …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
 &lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
     &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
@@ -311,7 +315,36 @@ const myChart = new Chart(ctx, {
 
                         "2021",
                         ],
-        datasets: [{
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        3.55,
+
+                        3.32,
+                        ],
+            backgroundColor: [
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
             label: '',
             data: [
                         3.55,
@@ -323,7 +356,7 @@ const myChart = new Chart(ctx, {
                         4.51,
                         ],
             backgroundColor: [
-                'rgba(54, 162, 235, 1)',
+                'grey',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
