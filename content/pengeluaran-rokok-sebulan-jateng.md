@@ -1,8 +1,8 @@
-Title: Pengeluaran Warga Untuk Makanan Jadi Kian Menurun Hingga Tahun 2021
-Date: 2022-06-15 12:20
+Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
+Date: 2022-06-11 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-makanan-jadi-sebulan
-Tags: consumer behavoiur,spending,fastfood
+Slug: pengeluaran-rokok-sebulan
+Tags: consumer behavoiur,spending,cigarettes
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -25,26 +25,27 @@ const myChart = new Chart(ctx, {
 						
 						"2021",
 						],
-        datasets: [{
+        datasets: [ 
+        {
             label: '',
             data: [
-						17.78,
+						5.39,
 						
-						18.24,
+						5.72,
 						
-						17.83,
+						5.91,
 						
-						16.4,
+						6.03,
 						],
             backgroundColor: [
-                'rgba(237, 144, 57, 1)',
-                'rgba(237, 144, 57, 1)',
-                'rgba(237, 144, 57, 1)',
-                'rgba(237, 144, 57, 1)',
+            	'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
             ],
-           	borderColor: 'rgba(237, 144, 57, 1)',
+            borderColor: 'rgba(54, 162, 235, 1)',
             datalabels: {
-	        	color: 'rgba(237, 144, 57, 1)',
+	        	color: 'rgba(54, 162, 235, 1)',
 	        	align: 'end',
     			anchor: 'end',
     			color: function(context) {

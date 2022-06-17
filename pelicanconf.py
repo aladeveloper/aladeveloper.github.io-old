@@ -6,7 +6,7 @@ import os
 AUTHOR = 'faris priadi'
 SITENAME = 'Data Lantip'
 SITESUBTITLE = "programming and data visualization"
-SITEURL = "https://datalantip.github.io" # leave it blank when in localhost
+SITEURL = "" #"https://datalantip.github.io" # leave it blank when in localhost
 
 PATH = "content"
 

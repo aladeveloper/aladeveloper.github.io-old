@@ -1,8 +1,8 @@
-Title: Belanja Sayur Sebulan Warga Meningkat 1.19% Sejak 2019
-Date: 2022-06-12 10:20
+Title: Minat Belanja Komoditas Tahan Lama Menurun 1.06% Selama 4 Tahun Terakhir
+Date: 2022-06-15 12:20
 Category: Jawa Tengah
-Slug: pengeluaran-sayur-sebulan
-Tags: consumer behavoiur,spending,vegetables
+Slug: pengeluaran-komoditas-tahan-lama
+Tags: consumer behavoiur,spending,durable goods
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -25,55 +25,26 @@ const myChart = new Chart(ctx, {
 						
 						"2021",
 						],
-        datasets: [ 
-        {
+        datasets: [{
             label: '',
             data: [
-						3.55,
+						6.86,
 						
-						3.32,
+						6.77,
+						
+						6.3,
+						
+						5.8,
 						],
             backgroundColor: [
-                'grey',
-                'rgba(54, 162, 235, 1)',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
             ],
-            borderColor: 'grey',
+            borderColor: 'rgba(237, 144, 57, 1)',
             datalabels: {
-	        	color: 'grey',
-	        	align: 'end',
-    			anchor: 'end',
-    			color: function(context) {
-		          return context.dataset.backgroundColor;
-		        },
-		        font: function(context) {
-		          var w = context.chart.width;
-		          return {
-		            size: 15,
-		            weight: 'bold',
-		          };
-		        },
-      		}
-        },
-        {
-            label: '',
-            data: [
-						3.55,
-						
-						3.32,
-						
-						3.72,
-						
-						4.51,
-						],
-            backgroundColor: [
-            	'grey',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-            ],
-            borderColor: 'rgba(54, 162, 235, 1)',
-            datalabels: {
-	        	color: 'rgba(54, 162, 235, 1)',
+	        	color: 'rgba(237, 144, 57, 1)',
 	        	align: 'end',
     			anchor: 'end',
     			color: function(context) {
@@ -130,4 +101,6 @@ const myChart = new Chart(ctx, {
     }
 });
 </script>
+
+
 	    

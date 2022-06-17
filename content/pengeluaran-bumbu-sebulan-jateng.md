@@ -1,8 +1,8 @@
-Title: Belanja Sayur Sebulan Warga Meningkat 1.19% Sejak 2019
-Date: 2022-06-12 10:20
+Title: Pasca Pandemi Pengeluaran Bumbu Meningkat 0.18% dari Tahun 2020
+Date: 2022-06-16 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-sayur-sebulan
-Tags: consumer behavoiur,spending,vegetables
+Slug: pengeluaran-bumbu-sebulan
+Tags: consumer behavoiur,spending,spices
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,11 +29,14 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						3.55,
+						1.04,
 						
-						3.32,
+						1.03,
+						
+						1.02,
 						],
             backgroundColor: [
+                'grey',
                 'grey',
                 'rgba(54, 162, 235, 1)',
             ],
@@ -57,17 +60,17 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						3.55,
+						1.04,
 						
-						3.32,
+						1.03,
 						
-						3.72,
+						1.02,
 						
-						4.51,
+						1.2,
 						],
             backgroundColor: [
             	'grey',
-                'rgba(54, 162, 235, 1)',
+                'grey',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
             ],

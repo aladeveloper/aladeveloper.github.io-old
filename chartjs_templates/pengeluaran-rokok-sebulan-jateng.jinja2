@@ -1,8 +1,8 @@
-Title: Belanja Sayur Sebulan Warga Meningkat 1.19% Sejak 2019
-Date: 2022-06-12 10:20
+Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
+Date: 2022-06-11 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-sayur-sebulan
-Tags: consumer behavoiur,spending,vegetables
+Slug: pengeluaran-rokok-sebulan
+Tags: consumer behavoiur,spending,cigarettes
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -16,57 +16,17 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [
-						"2018",
-						
-						"2019",
-						
-						"2020",
-						
-						"2021",
-						],
+        labels: [{% for item in x_values %}
+						"{{item}}",
+						{% endfor %}],
         datasets: [ 
         {
             label: '',
-            data: [
-						3.55,
-						
-						3.32,
-						],
+            data: [{% for item in y_values %}
+						{{item}},
+						{% endfor %}],
             backgroundColor: [
-                'grey',
-                'rgba(54, 162, 235, 1)',
-            ],
-            borderColor: 'grey',
-            datalabels: {
-	        	color: 'grey',
-	        	align: 'end',
-    			anchor: 'end',
-    			color: function(context) {
-		          return context.dataset.backgroundColor;
-		        },
-		        font: function(context) {
-		          var w = context.chart.width;
-		          return {
-		            size: 15,
-		            weight: 'bold',
-		          };
-		        },
-      		}
-        },
-        {
-            label: '',
-            data: [
-						3.55,
-						
-						3.32,
-						
-						3.72,
-						
-						4.51,
-						],
-            backgroundColor: [
-            	'grey',
+            	'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',

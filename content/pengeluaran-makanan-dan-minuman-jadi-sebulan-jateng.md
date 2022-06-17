@@ -1,7 +1,7 @@
 Title: Pengeluaran Warga Untuk Makanan Jadi Kian Menurun Hingga Tahun 2021
-Date: 2022-06-15 12:20
+Date: 2022-06-14 12:20
 Category: Jawa Tengah
-Slug: pengeluaran-makanan-jadi-sebulan
+Slug: pengeluaran-makanan-dan-minuman-jadi-sebulan
 Tags: consumer behavoiur,spending,fastfood
 Authors: Faris Priadi
 
@@ -16,14 +16,26 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [{% for item in x_values %}
-						"{{item}}",
-						{% endfor %}],
+        labels: [
+						"2018",
+						
+						"2019",
+						
+						"2020",
+						
+						"2021",
+						],
         datasets: [{
             label: '',
-            data: [{% for item in y_values %}
-						{{item}},
-						{% endfor %}],
+            data: [
+						17.78,
+						
+						18.24,
+						
+						17.83,
+						
+						16.4,
+						],
             backgroundColor: [
                 'rgba(237, 144, 57, 1)',
                 'rgba(237, 144, 57, 1)',
