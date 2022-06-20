@@ -144,7 +144,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -311,7 +311,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -442,7 +442,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -609,7 +609,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -740,7 +740,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -907,7 +907,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -1036,7 +1036,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -1165,7 +1165,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -1294,7 +1294,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -1456,7 +1456,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
@@ -1587,7 +1587,7 @@ const myChart = new Chart(ctx, {
           padding: {
             top: 32,
             right: 16,
-            bottom: 16,
+            bottom: 8,
             left: 20
           }
         },
