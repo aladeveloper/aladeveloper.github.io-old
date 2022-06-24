@@ -1764,7 +1764,7 @@ const myChart = new Chart(ctx, {
 
     }
 });
-&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="taxes"></category></entry><entry><title>Pengeluaran Untuk Cicilan dan Perabot Rumah Meningkat Bahkan Pada Saat Pandemi</title><link href="https://datalantip.github.io/pengeluaran-rumah-sebulan" rel="alternate"></link><published>2022-06-17T10:20:00+07:00</published><updated>2022-06-17T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-17:/pengeluaran-rumah-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="taxes"></category></entry><entry><title>Pengeluaran Cicilan dan Perabot Rumah Meningkat Bahkan Saat Pandemi</title><link href="https://datalantip.github.io/pengeluaran-rumah-sebulan" rel="alternate"></link><published>2022-06-17T10:20:00+07:00</published><updated>2022-06-17T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-17:/pengeluaran-rumah-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
 &lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
     &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
@@ -2229,7 +2229,7 @@ const myChart = new Chart(ctx, {
 
     }
 });
-&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="party"></category></entry><entry><title>Belanja Komoditas Tahan Lama Terus Menurun Hingga Menjadi 5.8% Di Tahun 2021</title><link href="https://datalantip.github.io/pengeluaran-komoditas-tahan-lama" rel="alternate"></link><published>2022-06-15T12:20:00+07:00</published><updated>2022-06-15T12:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-15:/pengeluaran-komoditas-tahan-lama</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="party"></category></entry><entry><title>Belanja Komoditas Tahan Lama Turun Hingga Menjadi 5.8% Tahun 2021</title><link href="https://datalantip.github.io/pengeluaran-komoditas-tahan-lama" rel="alternate"></link><published>2022-06-15T12:20:00+07:00</published><updated>2022-06-15T12:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-15:/pengeluaran-komoditas-tahan-lama</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
 &lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
     &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
@@ -2487,7 +2487,7 @@ const myChart = new Chart(ctx, {
 
     }
 });
-&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="fastfood"></category></entry><entry><title>Minat Belanja Buah Bulanan Warga Masih Merosot 0.57% Hingga Pasca Pandemi</title><link href="https://datalantip.github.io/pengeluaran-buah-sebulan" rel="alternate"></link><published>2022-06-13T11:20:00+07:00</published><updated>2022-06-13T11:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-13:/pengeluaran-buah-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="fastfood"></category></entry><entry><title>Minat Belanja Buah Merosot 0.57% Hingga Pasca Pandemi</title><link href="https://datalantip.github.io/pengeluaran-buah-sebulan" rel="alternate"></link><published>2022-06-13T11:20:00+07:00</published><updated>2022-06-13T11:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-13:/pengeluaran-buah-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
 &lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
     &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
