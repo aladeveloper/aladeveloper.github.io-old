@@ -1,5 +1,1305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Data Lantip - Jawa Tengah</title><link href="https://datalantip.github.io/" rel="alternate"></link><link href="https://datalantip.github.io/feeds/jawa-tengah.atom.xml" rel="self"></link><id>https://datalantip.github.io/</id><updated>2022-06-17T10:20:00+07:00</updated><subtitle>programming and data visualization</subtitle><entry><title>Pengeluaran Untuk Beras Mulai Meningkat 3% Dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-beras-sebulan" rel="alternate"></link><published>2022-06-17T10:20:00+07:00</published><updated>2022-06-17T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-17:/pengeluaran-beras-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Data Lantip - Jawa Tengah</title><link href="https://datalantip.github.io/" rel="alternate"></link><link href="https://datalantip.github.io/feeds/jawa-tengah.atom.xml" rel="self"></link><id>https://datalantip.github.io/</id><updated>2022-06-24T11:20:00+07:00</updated><subtitle>programming and data visualization</subtitle><entry><title>Pengeluaran Jasa dan Komoditas Lainnya Turun 3% dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-services-sebulan" rel="alternate"></link><published>2022-06-24T11:20:00+07:00</published><updated>2022-06-24T11:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-24:/pengeluaran-services-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        13.38,
+
+                        13.33,
+
+                        13.39,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        13.38,
+
+                        13.33,
+
+                        13.39,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        13.38,
+
+                        13.33,
+
+                        13.39,
+
+                        13.06,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'rgba(237, 144, 57, 1)',
+            datalabels: {
+                color: 'rgba(237, 144, 57, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="services"></category></entry><entry><title>Geliat Belanja Ikan Mulai Meningkat 11% Dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-ikan-sebulan" rel="alternate"></link><published>2022-06-24T10:20:00+07:00</published><updated>2022-06-24T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-24:/pengeluaran-ikan-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        2.29,
+
+                        2.33,
+
+                        2.27,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        2.29,
+
+                        2.33,
+
+                        2.27,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        2.29,
+
+                        2.33,
+
+                        2.27,
+
+                        2.51,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            datalabels: {
+                color: 'rgba(54, 162, 235, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="fishes"></category></entry><entry><title>Pengeluaran Untuk Kacang-Kacangan Mulai Meningkat 13% Dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-kacang-sebulan" rel="alternate"></link><published>2022-06-23T10:20:00+07:00</published><updated>2022-06-23T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-23:/pengeluaran-kacang-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        1.35,
+
+                        1.31,
+
+                        1.26,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        1.35,
+
+                        1.31,
+
+                        1.26,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        1.35,
+
+                        1.31,
+
+                        1.26,
+
+                        1.42,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            datalabels: {
+                color: 'rgba(54, 162, 235, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="nuts"></category></entry><entry><title>Persentase Pengeluaran Susu dan Telur Terbesar Di Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-telur-dan-susu-sebulan" rel="alternate"></link><published>2022-06-22T10:20:00+07:00</published><updated>2022-06-22T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-22:/pengeluaran-telur-dan-susu-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        2.88,
+
+                        2.86,
+
+                        2.94,
+
+                        2.84,
+                        ],
+            backgroundColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1 …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        2.88,
+
+                        2.86,
+
+                        2.94,
+
+                        2.84,
+                        ],
+            backgroundColor: [
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            datalabels: {
+                color: 'rgba(54, 162, 235, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="eggs"></category><category term="milk"></category></entry><entry><title>Pengeluaran Konsumsi Lain-Lain Meningkat 17% dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-konsumsi-lain-sebulan" rel="alternate"></link><published>2022-06-21T10:20:00+07:00</published><updated>2022-06-21T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-21:/pengeluaran-konsumsi-lain-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        0.98,
+
+                        0.94,
+
+                        0.9,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        0.98,
+
+                        0.94,
+
+                        0.9,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        0.98,
+
+                        0.94,
+
+                        0.9,
+
+                        1.05,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            datalabels: {
+                color: 'rgba(54, 162, 235, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="consumption"></category></entry><entry><title>Pasca Pandemi Belanja Umbi-umbian Meningkat 26% dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-umbi-sebulan" rel="alternate"></link><published>2022-06-20T10:20:00+07:00</published><updated>2022-06-20T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-20:/pengeluaran-umbi-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        0.31,
+
+                        0.34,
+
+                        0.35,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        0.31,
+
+                        0.34,
+
+                        0.35,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        0.31,
+
+                        0.34,
+
+                        0.35,
+
+                        0.44,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            datalabels: {
+                color: 'rgba(54, 162, 235, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="tubers"></category></entry><entry><title>Pasca Pandemi Belanja Minyak dan Kelapa Meningkat 15% dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-minyak-kelapa-sebulan" rel="alternate"></link><published>2022-06-19T10:20:00+07:00</published><updated>2022-06-19T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-19:/pengeluaran-minyak-kelapa-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        1.29,
+
+                        1.22,
+
+                        1.21,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        1.29,
+
+                        1.22,
+
+                        1.21,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        1.29,
+
+                        1.22,
+
+                        1.21,
+
+                        1.4,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'rgba(54, 162, 235, 1)',
+            datalabels: {
+                color: 'rgba(54, 162, 235, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="oil"></category><category term="coconut"></category></entry><entry><title>Pasca Pandemi Belanja Pakaian Warga Turun 18% dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-pakaian-sebulan" rel="alternate"></link><published>2022-06-18T10:20:00+07:00</published><updated>2022-06-18T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-18:/pengeluaran-pakaian-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        2.71,
+
+                        2.85,
+
+                        2.86,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color …&lt;/script&gt;</summary><content type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
+&lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
+    &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+&lt;script&gt;
+Chart.register(ChartDataLabels);
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [
+                        "2018",
+
+                        "2019",
+
+                        "2020",
+
+                        "2021",
+                        ],
+        datasets: [ 
+        {
+            label: '',
+            data: [
+                        2.71,
+
+                        2.85,
+
+                        2.86,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+                color: 'grey',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        },
+        {
+            label: '',
+            data: [
+                        2.71,
+
+                        2.85,
+
+                        2.86,
+
+                        2.34,
+                        ],
+            backgroundColor: [
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'rgba(237, 144, 57, 1)',
+            datalabels: {
+                color: 'rgba(237, 144, 57, 1)',
+                align: 'end',
+                anchor: 'end',
+                color: function(context) {
+                  return context.dataset.backgroundColor;
+                },
+                font: function(context) {
+                  var w = context.chart.width;
+                  return {
+                    size: 15,
+                    weight: 'bold',
+                  };
+                },
+            }
+        }],
+
+    },
+    options: {
+        responsive: true,
+        plugins:  {
+          datalabels: {
+            color: 'optionsrange',
+            padding: 5
+          },
+          legend : {
+            display: false,
+          }
+        },
+        // Core options
+        aspectRatio: 4 / 1,
+        layout: {
+          padding: {
+            top: 32,
+            right: 16,
+            bottom: 8,
+            left: 20
+          }
+        },
+        scales: {
+            y: {
+                // beginAtZero: true,
+                display : false,
+                ticks : {
+                    stepSize: 0.01
+
+                },
+            },
+            x: {
+                grid: {display: false, drawBorder: false},
+
+            }
+
+        }
+
+    }
+});
+&lt;/script&gt;</content><category term="Jawa Tengah"></category><category term="consumer behavoiur"></category><category term="spending"></category><category term="clothes"></category></entry><entry><title>Pengeluaran Untuk Beras Mulai Meningkat 3% Dari Tahun 2020</title><link href="https://datalantip.github.io/pengeluaran-beras-sebulan" rel="alternate"></link><published>2022-06-17T10:20:00+07:00</published><updated>2022-06-17T10:20:00+07:00</updated><author><name>Faris Priadi</name></author><id>tag:datalantip.github.io,2022-06-17:/pengeluaran-beras-sebulan</id><summary type="html">&lt;script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"&gt;&lt;/script&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"&gt;&lt;/script&gt;
 &lt;div id='chart-box' style="padding-top: 50px; padding-bottom: 100px;"&gt;
     &lt;canvas id="myChart" width="400" height="100"&gt;&lt;/canvas&gt;
