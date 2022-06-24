@@ -1,4 +1,4 @@
-Title: Pengeluaran Untuk Cicilan dan Perabot Rumah Meningkat Bahkan Pada Saat Pandemi
+Title: Pengeluaran Cicilan dan Perabot Rumah Meningkat Bahkan Saat Pandemi
 Date: 2022-06-17 10:20
 Category: Jawa Tengah
 Slug: pengeluaran-rumah-sebulan
@@ -78,7 +78,7 @@ const myChart = new Chart(ctx, {
 	    layout: {
 	      padding: {
 	        top: 32,
-	        right: 16,
+	        right: 20,
 	        bottom: 8,
 	        left: 20
 	      }

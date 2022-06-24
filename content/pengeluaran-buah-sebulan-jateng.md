@@ -1,4 +1,4 @@
-Title: Minat Belanja Buah Bulanan Warga Masih Merosot 0.57% Hingga Pasca Pandemi
+Title: Minat Belanja Buah Merosot 0.57% Hingga Pasca Pandemi
 Date: 2022-06-13 11:20
 Category: Jawa Tengah
 Slug: pengeluaran-buah-sebulan
@@ -77,7 +77,7 @@ const myChart = new Chart(ctx, {
 	    layout: {
 	      padding: {
 	        top: 32,
-	        right: 16,
+	        right: 20,
 	        bottom: 8,
 	        left: 20
 	      }

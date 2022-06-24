@@ -1,8 +1,8 @@
-Title: Pasca Pandemi Minat Warga Menggelar Khajatan Turun 37% dari Tahun 2020
-Date: 2022-06-16 10:20
+Title: Pembelian Bahan Minuman Meningkat Kembali Sejak Tahun 2020
+Date: 2022-06-23 11:20
 Category: Jawa Tengah
-Slug: pengeluaran-pesta-sebulan
-Tags: consumer behavoiur,spending,party
+Slug: pengeluaran-bahan-minuman-sebulan
+Tags: consumer behavoiur,spending,tea,sugar,coffee
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -16,51 +16,36 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [{% for item in x_values %}
-						"{{item}}",
-						{% endfor %}],
+        labels: [
+						"2018",
+						
+						"2019",
+						
+						"2020",
+						
+						"2021",
+						],
         datasets: [ 
         {
             label: '',
-            data: [{% for item in y_values[:3] %}
-						{{item}},
-						{% endfor %}],
+            data: [
+						1.8,
+						
+						1.75,
+						
+						1.79,
+						
+						1.89,
+						],
             backgroundColor: [
-                'grey',
-                'grey',
-                'rgba(237, 144, 57, 1)',
+            	'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(54, 162, 235, 1)',
             ],
-            borderColor: 'grey',
+            borderColor: 'rgba(54, 162, 235, 1)',
             datalabels: {
-	        	color: 'grey',
-	        	align: 'end',
-    			anchor: 'end',
-    			color: function(context) {
-		          return context.dataset.backgroundColor;
-		        },
-		        font: function(context) {
-		          var w = context.chart.width;
-		          return {
-		            size: 15,
-		            weight: 'bold',
-		          };
-		        },
-      		}
-        },
-        {
-            label: '',
-            data: [{% for item in y_values %}
-						{{item}},
-						{% endfor %}],
-            backgroundColor: [
-            	'grey',
-                'grey',
-                'rgba(237, 144, 57, 1)',
-                'rgba(237, 144, 57, 1)',
-            ],
-            borderColor: 'rgba(237, 144, 57, 1)',
-            datalabels: {
-	        	color: 'rgba(237, 144, 57, 1)',
+	        	color: 'rgba(54, 162, 235, 1)',
 	        	align: 'end',
     			anchor: 'end',
     			color: function(context) {

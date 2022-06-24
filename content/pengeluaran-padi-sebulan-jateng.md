@@ -109,7 +109,7 @@ const myChart = new Chart(ctx, {
 	    layout: {
 	      padding: {
 	        top: 32,
-	        right: 16,
+	        right: 20,
 	        bottom: 8,
 	        left: 20
 	      }
