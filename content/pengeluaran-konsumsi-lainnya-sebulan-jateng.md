@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pengeluaran Konsumsi Lain-Lain Meningkat 17% dari Tahun 2020
+Date: 2022-06-21 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-konsumsi-lain-sebulan
+Tags: consumer behavoiur,spending,consumption
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,17 +29,48 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						0.98,
 						
-						5.72,
+						0.94,
 						
-						5.91,
-						
-						6.03,
+						0.9,
 						],
             backgroundColor: [
-            	'rgba(54, 162, 235, 1)',
+                'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+	        	color: 'grey',
+	        	align: 'end',
+    			anchor: 'end',
+    			color: function(context) {
+		          return context.dataset.backgroundColor;
+		        },
+		        font: function(context) {
+		          var w = context.chart.width;
+		          return {
+		            size: 15,
+		            weight: 'bold',
+		          };
+		        },
+      		}
+        },
+        {
+            label: '',
+            data: [
+						0.98,
+						
+						0.94,
+						
+						0.9,
+						
+						1.05,
+						],
+            backgroundColor: [
+            	'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
             ],

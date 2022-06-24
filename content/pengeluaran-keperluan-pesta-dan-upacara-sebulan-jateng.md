@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pasca Pandemi Justru Minat Warga Untuk Menggelar Khajatan Turun 37% dari Tahun 2020
+Date: 2022-06-17 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-pesta-sebulan
+Tags: consumer behavoiur,spending,party
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,23 +29,54 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						2.39,
 						
-						5.72,
+						2.51,
 						
-						5.91,
-						
-						6.03,
+						2.25,
 						],
             backgroundColor: [
-            	'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
             ],
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: 'grey',
             datalabels: {
-	        	color: 'rgba(54, 162, 235, 1)',
+	        	color: 'grey',
+	        	align: 'end',
+    			anchor: 'end',
+    			color: function(context) {
+		          return context.dataset.backgroundColor;
+		        },
+		        font: function(context) {
+		          var w = context.chart.width;
+		          return {
+		            size: 15,
+		            weight: 'bold',
+		          };
+		        },
+      		}
+        },
+        {
+            label: '',
+            data: [
+						2.39,
+						
+						2.51,
+						
+						2.25,
+						
+						1.41,
+						],
+            backgroundColor: [
+            	'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'rgba(237, 144, 57, 1)',
+            datalabels: {
+	        	color: 'rgba(237, 144, 57, 1)',
 	        	align: 'end',
     			anchor: 'end',
     			color: function(context) {

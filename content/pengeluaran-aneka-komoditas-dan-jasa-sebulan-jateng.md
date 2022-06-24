@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pengeluaran Jasa dan Komoditas Lainnya Turun 3% dari Tahun 2020
+Date: 2022-06-24 11:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-services-sebulan
+Tags: consumer behavoiur,spending,services
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,23 +29,54 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						13.38,
 						
-						5.72,
+						13.33,
 						
-						5.91,
-						
-						6.03,
+						13.39,
 						],
             backgroundColor: [
-            	'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(54, 162, 235, 1)',
+                'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
             ],
-            borderColor: 'rgba(54, 162, 235, 1)',
+            borderColor: 'grey',
             datalabels: {
-	        	color: 'rgba(54, 162, 235, 1)',
+	        	color: 'grey',
+	        	align: 'end',
+    			anchor: 'end',
+    			color: function(context) {
+		          return context.dataset.backgroundColor;
+		        },
+		        font: function(context) {
+		          var w = context.chart.width;
+		          return {
+		            size: 15,
+		            weight: 'bold',
+		          };
+		        },
+      		}
+        },
+        {
+            label: '',
+            data: [
+						13.38,
+						
+						13.33,
+						
+						13.39,
+						
+						13.06,
+						],
+            backgroundColor: [
+            	'grey',
+                'grey',
+                'rgba(237, 144, 57, 1)',
+                'rgba(237, 144, 57, 1)',
+            ],
+            borderColor: 'rgba(237, 144, 57, 1)',
+            datalabels: {
+	        	color: 'rgba(237, 144, 57, 1)',
 	        	align: 'end',
     			anchor: 'end',
     			color: function(context) {

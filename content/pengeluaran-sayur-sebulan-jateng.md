@@ -1,4 +1,4 @@
-Title: Belanja Sayur Sebulan Warga Meningkat 1.19% Sejak 2019
+Title: Belanja Sayur Sebulan Warga Meningkat 32% Sejak 2019
 Date: 2022-06-12 10:20
 Category: Jawa Tengah
 Slug: pengeluaran-sayur-sebulan
@@ -107,7 +107,7 @@ const myChart = new Chart(ctx, {
 	      padding: {
 	        top: 32,
 	        right: 16,
-	        bottom: 16,
+	        bottom: 8,
 	        left: 20
 	      }
 	    },

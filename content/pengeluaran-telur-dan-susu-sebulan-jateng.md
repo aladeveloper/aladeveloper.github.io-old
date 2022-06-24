@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Persentase Pengeluaran Susu dan Telur Terbesar Di Tahun 2020
+Date: 2022-06-22 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-telur-dan-susu-sebulan
+Tags: consumer behavoiur,spending,eggs,milk
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,13 +29,13 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						2.88,
 						
-						5.72,
+						2.86,
 						
-						5.91,
+						2.94,
 						
-						6.03,
+						2.84,
 						],
             backgroundColor: [
             	'rgba(54, 162, 235, 1)',

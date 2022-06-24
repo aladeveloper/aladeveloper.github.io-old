@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pengeluaran Untuk Cicilan dan Perabot Rumah Meningkat Bahkan Pada Saat Pandemi
+Date: 2022-06-17 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-rumah-sebulan
+Tags: consumer behavoiur,spending,housing
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,13 +29,13 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						22.61,
 						
-						5.72,
+						22.4,
 						
-						5.91,
+						22.81,
 						
-						6.03,
+						23.83,
 						],
             backgroundColor: [
             	'rgba(54, 162, 235, 1)',

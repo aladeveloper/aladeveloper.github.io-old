@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pengeluaran Untuk Beras Mulai Meningkat 3% Dari Tahun 2020
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Date: 2022-06-17 10:20
+Slug: pengeluaran-beras-sebulan
+Tags: consumer behavoiur,spending,rice
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -16,30 +16,45 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [
-						"2018",
-						
-						"2019",
-						
-						"2020",
-						
-						"2021",
-						],
+        labels: [{% for item in x_values %}
+						"{{item}}",
+						{% endfor %}],
         datasets: [ 
         {
             label: '',
-            data: [
-						5.39,
-						
-						5.72,
-						
-						5.91,
-						
-						6.03,
-						],
+            data: [{% for item in y_values[:3] %}
+						{{item}},
+						{% endfor %}],
             backgroundColor: [
-            	'rgba(54, 162, 235, 1)',
+                'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+	        	color: 'grey',
+	        	align: 'end',
+    			anchor: 'end',
+    			color: function(context) {
+		          return context.dataset.backgroundColor;
+		        },
+		        font: function(context) {
+		          var w = context.chart.width;
+		          return {
+		            size: 15,
+		            weight: 'bold',
+		          };
+		        },
+      		}
+        },
+        {
+            label: '',
+            data: [{% for item in y_values %}
+						{{item}},
+						{% endfor %}],
+            backgroundColor: [
+            	'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
             ],

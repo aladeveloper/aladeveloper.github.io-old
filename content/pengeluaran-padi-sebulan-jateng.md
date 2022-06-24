@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pengeluaran Untuk Beras Mulai Meningkat 3% Dari Tahun 2020
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Date: 2022-06-17 10:20
+Slug: pengeluaran-beras-sebulan
+Tags: consumer behavoiur,spending,rice
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,17 +29,48 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						5.74,
 						
-						5.72,
+						5.4,
 						
-						5.91,
-						
-						6.03,
+						5.2,
 						],
             backgroundColor: [
-            	'rgba(54, 162, 235, 1)',
+                'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+	        	color: 'grey',
+	        	align: 'end',
+    			anchor: 'end',
+    			color: function(context) {
+		          return context.dataset.backgroundColor;
+		        },
+		        font: function(context) {
+		          var w = context.chart.width;
+		          return {
+		            size: 15,
+		            weight: 'bold',
+		          };
+		        },
+      		}
+        },
+        {
+            label: '',
+            data: [
+						5.74,
+						
+						5.4,
+						
+						5.2,
+						
+						5.35,
+						],
+            backgroundColor: [
+            	'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
             ],

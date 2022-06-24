@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Pasca Pandemi Belanja Daging Meningkat 72% dari Tahun 2020
+Date: 2022-06-17 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-daging-sebulan
+Tags: consumer behavoiur,spending,meat,chicken
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,17 +29,48 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						1.83,
 						
-						5.72,
+						1.89,
 						
-						5.91,
-						
-						6.03,
+						1.84,
 						],
             backgroundColor: [
-            	'rgba(54, 162, 235, 1)',
+                'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
+            ],
+            borderColor: 'grey',
+            datalabels: {
+	        	color: 'grey',
+	        	align: 'end',
+    			anchor: 'end',
+    			color: function(context) {
+		          return context.dataset.backgroundColor;
+		        },
+		        font: function(context) {
+		          var w = context.chart.width;
+		          return {
+		            size: 15,
+		            weight: 'bold',
+		          };
+		        },
+      		}
+        },
+        {
+            label: '',
+            data: [
+						1.83,
+						
+						1.89,
+						
+						1.84,
+						
+						2.16,
+						],
+            backgroundColor: [
+            	'grey',
+                'grey',
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
             ],

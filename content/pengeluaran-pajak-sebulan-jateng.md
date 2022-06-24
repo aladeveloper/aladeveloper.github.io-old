@@ -1,8 +1,8 @@
-Title: Pandemi Tidak Mengurangi Pengeluaran Warga Untuk Membeli Rokok
-Date: 2022-06-11 10:20
+Title: Persentase Pengeluaran Pajak Mengalami Kanaikan Selama 4 Tahun Terakhir
+Date: 2022-06-17 10:20
 Category: Jawa Tengah
-Slug: pengeluaran-rokok-sebulan
-Tags: consumer behavoiur,spending,cigarettes
+Slug: pengeluaran-pajak-sebulan
+Tags: consumer behavoiur,spending,taxes
 Authors: Faris Priadi
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.js"></script>
@@ -29,13 +29,13 @@ const myChart = new Chart(ctx, {
         {
             label: '',
             data: [
-						5.39,
+						2.93,
 						
-						5.72,
+						3.06,
 						
-						5.91,
+						3.67,
 						
-						6.03,
+						4.07,
 						],
             backgroundColor: [
             	'rgba(54, 162, 235, 1)',
