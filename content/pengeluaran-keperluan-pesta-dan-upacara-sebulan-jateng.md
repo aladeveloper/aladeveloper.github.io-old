@@ -1,5 +1,5 @@
-Title: Pasca Pandemi Justru Minat Warga Untuk Menggelar Khajatan Turun 37% dari Tahun 2020
-Date: 2022-06-17 10:20
+Title: Pasca Pandemi Minat Warga Menggelar Khajatan Turun 37% dari Tahun 2020
+Date: 2022-06-16 10:20
 Category: Jawa Tengah
 Slug: pengeluaran-pesta-sebulan
 Tags: consumer behavoiur,spending,party
