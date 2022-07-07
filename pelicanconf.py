@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = 'faris priadi'
-SITENAME = 'Data Lantip'
+SITENAME = 'aladeve'
 SITESUBTITLE = "programming and data visualization"
 SITEURL = "" #"https://datalantip.github.io" # leave it blank when in localhost
 
