@@ -5,7 +5,7 @@ import os
 
 AUTHOR = 'faris priadi'
 SITENAME = 'aladeve'
-SITESUBTITLE = "programming and data visualization"
+SITESUBTITLE = "narasi dan data visualization"
 SITEURL = "" #"https://datalantip.github.io" # leave it blank when in localhost
 
 PATH = "content"
@@ -50,6 +50,7 @@ SITEMAP = {
 THEME = "themes/elegant"
 TYPOGRIFY = True
 DEFAULT_PAGINATION = False
+DISPLAY_PAGES_ON_MENU = False
 
 # Defaults
 DEFAULT_CATEGORY = "Miscellaneous"
@@ -62,11 +63,13 @@ CATEGORIES_URL = "categories"
 ARCHIVES_URL = "archives"
 SEARCH_URL = "search"
 
+
 # Feeds
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
+
 
 # Social
 SOCIAL = (
@@ -76,6 +79,8 @@ SOCIAL = (
     ("RSS", SITEURL + "/feeds/all.atom.xml"),
     
 )
+
+
 
 # Elegant theme
 # STATIC_PATHS = ["theme/images", "images", "extra/_redirects", "code"]
@@ -118,8 +123,8 @@ TWITTER_USERNAME = "farispriadi"
 #     Creative Commons Attribution 4.0 International License</a>."""
 # HOSTED_ON = {"name": "Netlify", "url": "https://www.netlify.com/"}
 
-LANDING_PAGE_TITLE = "Cerita Data Daerah"
-SITE_DESCRIPTION = "Menggali pengetahuan dari data publik untuk menciptakan peluang usaha di daerah"
+LANDING_PAGE_TITLE = "Melihat Data Dengan Cerita"
+SITE_DESCRIPTION = "tell your research story"
 SITE_LOGO = "/theme/images/logo_text_h_white.png"
 FEATURED_IMAGE = "/theme/images/banner.png"
 
@@ -147,3 +152,12 @@ AUTHORS = {
 DISQUS_FILTER = True
 UTTERANCES_FILTER = True
 COMMENTBOX_FILTER = True
+
+
+#SEO
+
+# settings.py
+SEO_REPORT = True  # To enable this feature
+SEO_ENHANCER = False  # To disable this feature
+SEO_ENHANCER_OPEN_GRAPH = False # The default value for this feature
+SEO_ENHANCER_TWITTER_CARDS = False # The default value for this feature
