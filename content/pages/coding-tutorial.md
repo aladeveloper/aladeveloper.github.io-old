@@ -1,5 +1,5 @@
 Title: Data Visualization Tutorial
-Slug: tutorial
+Slug: coding-tutorial
 
 
 ## Data Visualization Tools dengan Python
